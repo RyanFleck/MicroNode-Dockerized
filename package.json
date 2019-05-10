@@ -4,8 +4,8 @@
   "description": "Tiny dockerized Node microservice.",
   "main": "service.js",
   "scripts": {
-    "dockerbuild": "docker build -t 'micronode' .",
-    "dockerrun": "docker run --name 'MicroNode' -p 1000:7654 micronode",
+    "dockerbuild": "docker build -t 'rcf/micronode' .",
+    "dockerrun": "docker run --name 'MicroNode' -p 1000:7654 rcf/micronode",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node service.js"
   },
