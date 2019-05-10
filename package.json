@@ -1,0 +1,30 @@
+{
+  "name": "micronode-dockerized",
+  "version": "1.0.0",
+  "description": "Tiny dockerized Node microservice.",
+  "main": "service.js",
+  "scripts": {
+    "dockerbuild": "docker build -t 'micronode' .",
+    "dockerrun": "docker run --name 'MicroNode' -p 1000:7654 micronode",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node service.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanFleck/MicroNode-Dockerized.git"
+  },
+  "keywords": [
+    "docker",
+    "node",
+    "microservice"
+  ],
+  "author": "Ryan Fleck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyanFleck/MicroNode-Dockerized/issues"
+  },
+  "homepage": "https://github.com/RyanFleck/MicroNode-Dockerized#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
