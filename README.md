@@ -40,3 +40,5 @@ Running `npm run dockerrun` starts a docker container named *MicroNode* from the
 ```
 docker run --name 'MicroNode' -p 1000:7654 rcf/micronode
 ```
+
+The `-p` command maps an *external* port to an *internal* port. Here, `localhost:1000` is mapped to port `7654` within the container.
