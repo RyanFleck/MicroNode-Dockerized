@@ -42,3 +42,5 @@ docker run --name 'MicroNode' -p 1000:7654 rcf/micronode
 ```
 
 The `-p` command maps an *external* port to an *internal* port. Here, `localhost:1000` is mapped to port `7654` within the container.
+
+Flag `-it` will display an interactive container prompt. Alternatively, if no output is desired, using the `-d` flag will run the container in the background.
